@@ -1,12 +1,35 @@
 ## pip install
+```
 pip install django
 pip install djangorestframework
 pip install django-cors-headers
+```
+改了数据库后要装
+```
+pip install -i https://pypi.tuna.tsinghua.edu.cn/simple/  pymysql
+```
+
+```python
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'MUDatabase',
+        'USER': 'root',
+        'PASSWORD': 'root',
+        'HOST': '127.0.0.1',
+        'PORT': '3306',
+    }
+```
+
 
 ## start
 ```
 python manage.py runserver
 ```
+新建app
+```python
+
+```
+
 
 ## 目录结构
 
@@ -42,5 +65,15 @@ backends
 
 3. 右键点击数据库名称，选择“运行SQL文件”。
 
-
 ```
+
+# Tutorial
+
+https://www.youtube.com/watch?v=rHux0gMZ3Eg
+
+https://www.youtube.com/watch?v=Yg5zkd9nm6w
+
+# 自带数据库
+Username: root
+Email address: root@mu.com
+Password: root
