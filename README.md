@@ -26,8 +26,14 @@ pip install -i https://pypi.tuna.tsinghua.edu.cn/simple/  pymysql
 python manage.py runserver
 ```
 新建app
-```python
+```
+python manage.py startapp company
+```
 
+数据库迁移
+```
+python manage.py makemigrations
+python manage.py migrate
 ```
 
 

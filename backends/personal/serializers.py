@@ -1,13 +1,14 @@
 from rest_framework import serializers
-from .models import *
+from .models import ClassForget
 
-class personalSerializer(serializers.HyperlinkedModelSerializer):
-    """
-    用户登陆
-    """
+class ClassForgetSerializer(serializers.ModelSerializer):
     class Meta:
-        model = personal
-        fields = "__all__"
+        model = ClassForget
+        fields = (
+            'pic',
+            'beforeCategory',
+            'afterCategory'
+        )
 
 
 # class AdviceTextSerializer(serializers.HyperlinkedModelSerializer):
