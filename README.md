@@ -30,7 +30,7 @@ python manage.py runserver
 python manage.py startapp company
 ```
 
-数据库迁移
+数据库迁移 只要修改了models.py文件，都需要执行一下
 ```
 python manage.py makemigrations
 python manage.py migrate
@@ -81,5 +81,19 @@ https://www.youtube.com/watch?v=Yg5zkd9nm6w
 
 # 自带数据库
 Username: root
+
 Email address: root@mu.com
+
 Password: root
+
+
+## 进度
+### 后端接口已完成
+个人-类别遗忘 user_classforget
+
+公司-投毒遗忘 admin_poison
+
+公司-遗忘记录 admin_record
+
+### TODO
+数据库改成MySql

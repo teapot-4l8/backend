@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import PoisonProtect
+from .models import PoisonProtect, Record
 
 class PoisonProtectSerializer(serializers.ModelSerializer):
     class Meta:
@@ -12,6 +12,20 @@ class PoisonProtectSerializer(serializers.ModelSerializer):
             'spend_time',
             'state',
             'detail'
+        )
+
+
+class RecordSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Record
+        fields = (
+            'inf_type',
+            'forget_flag',
+            'forget_content',
+            'acc',
+            'cost_time',
+            'user',
+            'date',
         )
 
 # class AdviceTextSerializer(serializers.HyperlinkedModelSerializer):
