@@ -21,3 +21,13 @@ class ClassForget(models.Model):  # 类别遗忘
             return "http://127.0.0.1:8000" + self.img.url
         return ''
 
+
+class Record(models.Model):
+    inf_type = models.CharField(max_length=254)  # 信息类型 1：文本 2：图片
+    forget_flag = models.CharField(max_length=254)  # 是否遗忘 0:正在遗忘 1：已遗忘
+    forget_content = models.CharField(max_length=254)  # 遗忘内容
+    cost_time = models.CharField(max_length=254)  # 用时
+    date = models.CharField(max_length=254)  # 操作时间
+
+    class Meta:
+        db_table = "personal_record"

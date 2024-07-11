@@ -13,8 +13,8 @@ class PoisonProtectView(APIView):
 
 class RecordView(APIView):
     def get(self, request):
-        poison_protect = Record.objects.all()
-        serializer = RecordSerializer(poison_protect, many=True)
+        company_record = Record.objects.all()
+        serializer = RecordSerializer(company_record, many=True)
         return Response(serializer.data)
 
 

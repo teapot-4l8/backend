@@ -91,6 +91,8 @@ Password: root
 ### 后端接口已完成
 个人-类别遗忘 user_classforget
 
+个人-遗忘记录 user_record
+
 公司-投毒遗忘 admin_poison
 
 公司-遗忘记录 admin_record

@@ -36,4 +36,4 @@ class Record(models.Model):
     date = models.CharField(max_length=254)  # 操作时间
 
     class Meta:
-        db_table = "record"
+        db_table = "company_record"
