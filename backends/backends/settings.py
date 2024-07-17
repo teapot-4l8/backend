@@ -74,20 +74,22 @@ WSGI_APPLICATION = 'backends.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
+import pymysql
+pymysql.install_as_MySQLdb()
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-    # TODO 环境问题整一下 django.db.utils.OperationalError: (1049, "Unknown database 'mudatabase'")
     # 'default': {
-    #     'ENGINE': 'django.db.backends.mysql',
-    #     'NAME': 'MUDatabase',
-    #     'USER': 'root',
-    #     'PASSWORD': 'root',
-    #     'HOST': '127.0.0.1',
-    #     'PORT': '3306',
+    #     'ENGINE': 'django.db.backends.sqlite3',
+    #     'NAME': BASE_DIR / 'db.sqlite3',
     # }
+    # TODO 环境问题整一下 django.db.utils.OperationalError: (1049, "Unknown database 'mudatabase'")
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'mymudatabase',
+        'USER': 'root',
+        'PASSWORD': '123456',
+        'HOST': '127.0.0.1',
+        'PORT': '3306',
+    }
 }
 
 

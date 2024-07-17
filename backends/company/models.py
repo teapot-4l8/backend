@@ -34,6 +34,7 @@ class Record(models.Model):
     cost_time = models.CharField(max_length=254)  # 用时
     user = models.CharField(max_length=254)  # 来源用户
     date = models.CharField(max_length=254)  # 操作时间
+    test = models.CharField(max_length=254, default='abc')  # 操作时间
 
     class Meta:
         db_table = "company_record"
