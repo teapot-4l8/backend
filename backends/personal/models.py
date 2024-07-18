@@ -31,3 +31,9 @@ class Record(models.Model):
 
     class Meta:
         db_table = "personal_record"
+
+class Text(models.Model):
+    key_word = models.CharField(max_length=254)  # 用户输入的关键词
+
+    class Meta:
+        db_table = "Text"
