@@ -16,7 +16,7 @@ pymysql.install_as_MySQLdb()
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'mymudatabase',
+        'NAME': 'mudatabase',
         'USER': 'root',
         'PASSWORD': 'root',
         'HOST': '127.0.0.1',
@@ -68,11 +68,11 @@ backends
 打开电脑的“服务”，不知道位置的直接在左下角搜索即可，找到MYSQL，点击左侧“启动”按钮或者右键点击“启动”按钮即可打开mysql服务
 
 2. 打开Navicat并建立连接
-连接名称：MUDatabase
+连接名称：随便写
 主机名/IP地址：127.0.0.1
 端口：3306
 用户名：root
-密码：root
+密码：6666
 
 3. 右键点击数据库名称，选择“运行SQL文件”。
 
