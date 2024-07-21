@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import ClassForget, Record
+from .models import ClassForget, Record, Text
 
 class ClassForgetSerializer(serializers.ModelSerializer):
     class Meta:
@@ -19,4 +19,11 @@ class RecordSerializer(serializers.ModelSerializer):
             'forget_content',
             'cost_time',
             'date'
+        )
+
+class TextSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Text
+        fields = (
+            'key_word',
         )

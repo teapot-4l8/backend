@@ -1,3 +1,4 @@
+# 前置操作及重要操作命令
 ## pip install
 ```
 pip install django
@@ -6,18 +7,22 @@ pip install django-cors-headers
 ```
 改了数据库后要装
 ```
-pip install -i https://pypi.tuna.tsinghua.edu.cn/simple/  pymysql
+pip install -i https://pypi.tuna.tsinghua.edu.cn/simple/pymysql
 ```
-
+这里导入库，并把数据库名字改成自己电脑上最初下mysql时的用户名和密码，host和port一般不用改
 ```python
+import pymysql
+pymysql.install_as_MySQLdb()
+DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'MUDatabase',
+        'NAME': 'mymudatabase',
         'USER': 'root',
-        'PASSWORD': 'root',
+        'PASSWORD': '123456',
         'HOST': '127.0.0.1',
         'PORT': '3306',
     }
+}
 ```
 
 
@@ -37,7 +42,7 @@ python manage.py migrate
 ```
 
 
-## 目录结构
+# 目录结构
 
 ```
 backends
@@ -73,7 +78,7 @@ backends
 
 
 
-# Tutorial
+# 教程
 
 https://www.youtube.com/watch?v=rHux0gMZ3Eg
 
@@ -89,8 +94,8 @@ Email address: root@mu.com
 Password: root
 
 
-## 进度
-### 后端接口已完成
+# 进度
+## 后端接口已完成
 个人-类别遗忘 user_classforget
 
 个人-遗忘记录 user_record
@@ -99,5 +104,8 @@ Password: root
 
 公司-遗忘记录 admin_record
 
-### TODO
-数据库改成MySql
+## TODO
+个人-文本遗忘 将输入框中文本传输到后端
+
+# 其他事项
+导入文件（如图片）时，只需uploads/文件名即可，如用../ 就会导致相对地址前加ip地址，而不是文件夹地址，会导致读取不到文件
