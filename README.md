@@ -53,7 +53,7 @@ backends
 │   ├── （）
 │   ├── .py（）
 │   └── .py（）
-
+```
 
 ## 关于MySQL数据库
 
@@ -71,13 +71,15 @@ backends
 
 3. 右键点击数据库名称，选择“运行SQL文件”。
 
-```
+
 
 # Tutorial
 
 https://www.youtube.com/watch?v=rHux0gMZ3Eg
 
-https://www.youtube.com/watch?v=Yg5zkd9nm6w
+[E-commerce Website With Django and Vue Tutorial (Django Rest Framework)][https://www.youtube.com/watch?v=Yg5zkd9nm6w]
+
+[Django + MySQL + Vue JS | full-stack app tutorial][https://www.youtube.com/watch?v=jUJfoqtihFk]
 
 # 自带数据库
 Username: root
