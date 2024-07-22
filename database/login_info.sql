@@ -22,16 +22,18 @@ SET FOREIGN_KEY_CHECKS = 0;
 -- ----------------------------
 DROP TABLE IF EXISTS `login_info`;
 CREATE TABLE `login_info`  (
+  `id` bigint NOT NULL AUTO_INCREMENT,
   `user` varchar(254) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NULL DEFAULT NULL,
   `password` varchar(254) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NULL DEFAULT NULL,
-  `loginclass` int NULL DEFAULT NULL
+  `admin` int NULL DEFAULT NULL,
+  PRIMARY KEY (`id`) USING BTREE
 ) ENGINE = InnoDB CHARACTER SET = utf8mb4 COLLATE = utf8mb4_0900_ai_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of login_info
 -- ----------------------------
-INSERT INTO `login_info` VALUES ('user1', '123', 0);
-INSERT INTO `login_info` VALUES ('user2', '123', 0);
-INSERT INTO `login_info` VALUES ('company', '123', 1);
+INSERT INTO `login_info` VALUES (1, 'user1', '123', 0);
+INSERT INTO `login_info` VALUES (2, 'user2', '123', 0);
+INSERT INTO `login_info` VALUES (3, 'company', '123', 1);
 
 SET FOREIGN_KEY_CHECKS = 1;
