@@ -1,3 +1,5 @@
+# 技术使用：Django + MySQL数据库 + axios网络请求库
+
 # 前置操作及重要操作命令
 ## pip install
 ```
@@ -94,16 +96,21 @@ Password: root
 
 # 进度
 ## 后端接口已完成
-个人-类别遗忘 user_classforget
+个人-类别遗忘 class-forget/
 
-个人-遗忘记录 user_record
+个人-遗忘记录 personal-record/
 
-公司-投毒遗忘 admin_poison
+个人-文本遗忘 text-forget/
 
-公司-遗忘记录 admin_record
+公司-投毒遗忘 poison-protect/
+
+公司-遗忘记录 company-record/
 
 ## TODO
-个人-文本遗忘 将输入框中文本传输到后端
+
+登录界面 限制除已注册账号外其他账号登录
+
+将 前端输入 和 MU模型输出 连接起来
 
 # 其他事项
 导入文件（如图片）时，只需uploads/文件名即可，如用../ 就会导致相对地址前加ip地址，而不是文件夹地址，会导致读取不到文件
