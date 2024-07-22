@@ -56,7 +56,7 @@ backends
 │   ├── （）
 │   ├── .py（）
 │   └── .py（）
-├── personal（个软端app）
+├── personal（个人端app）
 │   ├── （）
 │   ├── .py（）
 │   └── .py（）
@@ -96,6 +96,8 @@ Password: root
 
 # 进度
 ## 后端接口已完成
+登录界面 login-info/
+
 个人-类别遗忘 class-forget/
 
 个人-遗忘记录 personal-record/
@@ -107,8 +109,6 @@ Password: root
 公司-遗忘记录 company-record/
 
 ## TODO
-
-登录界面 限制除已注册账号外其他账号登录
 
 将 前端输入 和 MU模型输出 连接起来
 
