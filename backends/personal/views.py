@@ -3,14 +3,10 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from .models import ClassForget, Record, Text
 from .serializers import ClassForgetSerializer, RecordSerializer, TextSerializer
-from django.http import JsonResponse
 from django.http import HttpResponse
-from django.views.decorators.csrf import csrf_exempt
-
 
 class ClassForgetView(APIView):
     def get(self, request):
-        print(request.method)
         classforget = ClassForget.objects.all()
         serializer = ClassForgetSerializer(classforget, many=True)
         return Response(serializer.data)

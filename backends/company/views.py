@@ -1,7 +1,7 @@
 from rest_framework.views import APIView
 from rest_framework.response import Response
-from .models import PoisonProtect, Record
-from .serializers import PoisonProtectSerializer, RecordSerializer
+from .models import PoisonProtect, Admin_Record
+from .serializers import PoisonProtectSerializer, Admin_RecordSerializer
 
 
 class PoisonProtectView(APIView):
@@ -11,10 +11,10 @@ class PoisonProtectView(APIView):
         return Response(serializer.data)
 
 
-class RecordView(APIView):
+class Admin_RecordView(APIView):
     def get(self, request):
-        company_record = Record.objects.all()
-        serializer = RecordSerializer(company_record, many=True)
+        admin_record = Admin_Record.objects.all()
+        serializer = Admin_RecordSerializer(admin_record, many=True)
         return Response(serializer.data)
 
 

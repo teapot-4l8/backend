@@ -30,7 +30,7 @@ class Record(models.Model):
     date = models.CharField(max_length=254)  # 操作时间
 
     class Meta:
-        db_table = "personal_record"
+        db_table = "user_record"
 
 class Text(models.Model):
     key_word = models.CharField(max_length=254)  # 用户输入的关键词

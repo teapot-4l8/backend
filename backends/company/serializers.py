@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import PoisonProtect, Record
+from .models import PoisonProtect, Admin_Record
 
 class PoisonProtectSerializer(serializers.ModelSerializer):
     class Meta:
@@ -14,24 +14,15 @@ class PoisonProtectSerializer(serializers.ModelSerializer):
             'detail'
         )
 
-
-class RecordSerializer(serializers.ModelSerializer):
+class Admin_RecordSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Record
+        model = Admin_Record
         fields = (
+            'acc',
             'inf_type',
             'forget_flag',
             'forget_content',
-            'acc',
             'cost_time',
-            'user',
             'date',
+            'user',
         )
-
-# class AdviceTextSerializer(serializers.HyperlinkedModelSerializer):
-#     """
-#     优化建议-文本遗忘
-#     """
-#     class Meta:
-#         model = AdviceText
-#         fields = "__all__"
