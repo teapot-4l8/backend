@@ -5,13 +5,24 @@ class PoisonProtectSerializer(serializers.ModelSerializer):
     class Meta:
         model = PoisonProtect
         fields = (
-            'model_name',
-            'progress',
-            'pre_acc',
-            'final_acc',
-            'spend_time',
+            'model',
             'state',
-            'detail'
+            'expected_acc',
+            'actual_acc',
+            'cost_time',
+            'recovered_acc',
+            'loading',
+            'loading2',
+            'loading3',
+            'operation',
+            'operation2',
+            'operation3',
+            'b1',
+            'b2',
+            'b3',
+            'detail',
+            'be_flag',
+            'jiaofu_flag',
         )
 
 class Admin_RecordSerializer(serializers.ModelSerializer):

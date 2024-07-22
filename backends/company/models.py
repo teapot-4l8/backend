@@ -1,16 +1,27 @@
 from django.db import models
 
 class PoisonProtect(models.Model):
-    model_name = models.CharField(max_length=254)  # 模型名称 model
-    progress = models.CharField(max_length=254)  # 进度  row.b1 b2 b3
-    pre_acc = models.CharField(max_length=254)  # 原准确率 expected_acc
-    final_acc = models.CharField(max_length=254)  # 恢复后准确率 actual_acc
-    spend_time = models.CharField(max_length=254)  # 用时 cost_time
-    state = models.CharField(max_length=254)  # 交付状态 state
-    detail = models.CharField(max_length=254, blank=True, null=True)  # 日志信息
+    model = models.CharField(max_length=254)
+    state = models.CharField(max_length=254)
+    expected_acc = models.CharField(max_length=254)
+    actual_acc = models.CharField(max_length=254)
+    cost_time = models.CharField(max_length=254)
+    recovered_acc = models.CharField(max_length=254) 
+    loading = models.CharField(max_length=254)  
+    loading2 = models.CharField(max_length=254)  
+    loading3 = models.CharField(max_length=254)  
+    operation = models.CharField(max_length=254, blank=True, null=True)
+    operation2 = models.CharField(max_length=254, blank=True, null=True)
+    operation3 = models.CharField(max_length=254, blank=True, null=True)
+    b1 = models.CharField(max_length=254, blank=True, null=True)
+    b2 = models.CharField(max_length=254, blank=True, null=True)
+    b3 = models.CharField(max_length=254, blank=True, null=True)
+    detail = models.CharField(max_length=254, blank=True, null=True)
+    be_flag = models.CharField(max_length=254, blank=True, null=True)
+    jiaofu_flag = models.CharField(max_length=254, blank=True, null=True)
 
     class Meta:
-        db_table = "poison_protect"
+        db_table = "admin_poison"
 
 
 class Admin_Record(models.Model):
