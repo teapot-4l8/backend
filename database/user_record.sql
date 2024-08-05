@@ -38,12 +38,12 @@ INSERT INTO `user_record` VALUES (1, '图片', '正在遗忘', '飞机类', '\\'
 INSERT INTO `user_record` VALUES (2, '图片', '正在遗忘', '358张已上传图片', '\\', '2024-05-19 10:27:23');
 INSERT INTO `user_record` VALUES (3, '文本', '正在遗忘', 'Cai Yunze', '\\', '2024-05-17 21:27:15');
 INSERT INTO `user_record` VALUES (4, '图片', '已遗忘', '卡车类', '3.9min', '2024-05-16 10:35:59');
-INSERT INTO `user_record` VALUES (5, '文本', '已遗忘', 'Mobile phone number is 114514', '1.34s', '2024-05-13 08:45:18');
+INSERT INTO `user_record` VALUES (5, '文本', '已遗忘', 'Mobile phone number is 114514', '1.3min', '2024-05-13 08:45:18');
 INSERT INTO `user_record` VALUES (6, '图片', '已遗忘', '青蛙类', '3.6min', '2024-05-09 20:32:13');
-INSERT INTO `user_record` VALUES (7, '文本', '已遗忘', 'Meeting on May 2nd', '2.87s', '2024-05-03 09:16:51');
-INSERT INTO `user_record` VALUES (8, '文本', '已遗忘', 'Her name is Xiao Heizi!!!', '1.06s', '2024-04-30 23:13:51');
+INSERT INTO `user_record` VALUES (7, '文本', '已遗忘', 'Meeting on May 2nd', '2.8min', '2024-05-03 09:16:51');
+INSERT INTO `user_record` VALUES (8, '文本', '已遗忘', 'Her name is Xiao Heizi!!!', '1.0min', '2024-04-30 23:13:51');
 INSERT INTO `user_record` VALUES (9, '图片', '已遗忘', '17张已上传图片', '4.3min', '2024-04-27 09:17:24');
-INSERT INTO `user_record` VALUES (10, '图片', '已遗忘', '29张已上传图片', '4.7min', '2024-04-23 14:25:13');
-INSERT INTO `user_record` VALUES (11, '文本', '已遗忘', 'I have heart disease', '1.79s', '2024-04-09 19:46:32');
+INSERT INTO `user_record` VALUES (10, '图片', '已遗忘', '29张已上传图片', '5.1min', '2024-04-23 14:25:13');
+INSERT INTO `user_record` VALUES (11, '文本', '已遗忘', 'I have heart disease', '1.8min', '2024-04-09 19:46:32');
 
 SET FOREIGN_KEY_CHECKS = 1;
