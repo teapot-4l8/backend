@@ -36,8 +36,8 @@ CREATE TABLE `admin_record`  (
 -- ----------------------------
 -- Records of admin_record
 -- ----------------------------
-INSERT INTO `admin_record` VALUES (1, '文本', '正在遗忘', 'His name is Mike', '-2.1%', '\\', 'Mike', '2024-05-23 23:13:51');
-INSERT INTO `admin_record` VALUES (2, '图片', '正在遗忘', '7张已上传图片', '-3.2%', '\\', 'Aaron', '2024-05-21 10:31:11');
+INSERT INTO `admin_record` VALUES (1, '文本', '正在遗忘', 'His name is Mike', '-2.1%', '\\', 'Mike', '2024-05-23 10:32:27');
+INSERT INTO `admin_record` VALUES (2, '图片', '正在遗忘', '7张已上传图片', '-3.2%', '\\', 'Aaron', '2024-05-23 10:31:11');
 INSERT INTO `admin_record` VALUES (3, '文本', '已遗忘', 'Liu Xuan ', '-2.7%', '2.1min', 'Benson', '2024-05-17 21:27:15');
 INSERT INTO `admin_record` VALUES (4, '图片', '已遗忘', '船类', '-4.3%', '4.2min', 'Benson', '2024-05-13 10:35:59');
 INSERT INTO `admin_record` VALUES (5, '图片', '已遗忘', '飞机类', '-1.9%', '3.4min', 'Denny', '2024-05-11 10:27:23');
