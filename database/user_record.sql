@@ -34,7 +34,7 @@ CREATE TABLE `user_record`  (
 -- ----------------------------
 -- Records of user_record
 -- ----------------------------
-INSERT INTO `user_record` VALUES (1, '文本', '已遗忘', 'Her father was a Civil Engineer and her mother was a Chemist.', '1min31s', '2024-05-19 10:42:14');
+INSERT INTO `user_record` VALUES (1, '文本', '已遗忘', 'Raven Marais was born to a lawyer father and zoologist mother in Cape Town, South Africa', '1min31s', '2024-05-19 10:42:14');
 INSERT INTO `user_record` VALUES (2, '图片', '已遗忘', '345张已上传图片', '37.2s', '2024-05-19 10:39:23');
 INSERT INTO `user_record` VALUES (3, '图片', '已遗忘', '狗类', '6min52s', '2024-05-19 10:27:15');
 INSERT INTO `user_record` VALUES (4, '图片', '已遗忘', '卡车类', '3min54s', '2024-05-16 21:35:59');

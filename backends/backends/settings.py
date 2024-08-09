@@ -84,7 +84,7 @@ DATABASES = {
     # TODO 环境问题整一下 django.db.utils.OperationalError: (1049, "Unknown database 'mudatabase'")
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'database',
+        'NAME': 'mymudatabase',
         'USER': 'root',
         'PASSWORD': '123456',
         'HOST': '127.0.0.1',
